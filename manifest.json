@@ -1,0 +1,27 @@
+{
+
+    "manifest_version": 2,
+    "name": "Unnamed Mozilla extension",
+    "version": "1.0",
+  
+    "description": "A simple Mozilla extension that acts as an on/off switch for the dom.event.clipboardevents.enabled property in order to enable copying and pasting on sites that block it. ",
+  
+    "icons": {
+      "48": "icon.png"
+    },
+
+    "permissions": [
+        "activeTab"
+      ],
+    
+    "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "UMx"
+    },
+
+
+    "background": {
+      "scripts": ["copify.js"]
+    }
+  
+  }
